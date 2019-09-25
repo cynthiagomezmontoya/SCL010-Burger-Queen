@@ -3,20 +3,18 @@ import { Link } from "react-router-dom";
 
 const Button = () => {
   return (
-    <nav>
-      <ul className="button-menu">
-        <button type="button" className="btn btn-dark btn-lg">
-          <Link className="button" to="/Breakfast">
+    <div className="button-menu">
+        <Link className="button" to="/Breakfast">
+          <button type="button" className="btn btn-dark btn-lg">
             Desayuno
-          </Link>
-        </button>
-        <button type="button" className="btn btn-dark btn-lg">
-          <Link className="button" to="/Lunch">
+          </button>
+        </Link>
+        <Link className="button" to="/Lunch">
+          <button type="button" className="btn btn-dark btn-lg">
             Menu del dia
-          </Link>
-        </button>
-      </ul>
-    </nav>
+          </button>
+        </Link>
+    </div>
   );
 };
 

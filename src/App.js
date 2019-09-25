@@ -13,26 +13,20 @@ function App() {
   return (
     <Router>
       <nav>
-        <div>
           <ul className="menu">
-            <li>
-              <Link to="/">Inicio</Link>
-            </li>
-            <li>
-              <Link to="/kitchen"> Cocina</Link>
-            </li>
-            <li>
-              <Link to="/">Cerrar Sesion</Link>
-            </li>
+        <button>
+        <Link to="/">Inicio</Link>
+        </button>
+        <button>
+        <Link to="/kitchen"> Cocina</Link>
+        </button>
           </ul>
-          <hr />
+      </nav>
           <Route exact path="/" component={Home} />
           <Route path="/breakfast" component={Breakfast} />
           <Route path="/lunch" component={Lunch} />
           <Route exact path="/" component={Button} />
           <Route path="/kitchen" component={Kitchen} />
-        </div>
-      </nav>
     </Router>
   );
 }
