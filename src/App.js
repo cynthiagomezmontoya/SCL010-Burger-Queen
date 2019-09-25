@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import Breakfast from "./components/Breakfast";
 import Lunch from "./components/Lunch";
 import Button from "./components/ButtonHome";
+import Kitchen from "./components/Kitchen";
 
 function App() {
   return (
@@ -15,13 +16,10 @@ function App() {
         <div>
           <ul className="menu">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">Inicio</Link>
             </li>
             <li>
-              <Link to="/breakfast">Breakfast</Link>
-            </li>
-            <li>
-              <Link to="/lunch">Pedidos Cocina</Link>
+              <Link to="/kitchen"> Cocina</Link>
             </li>
             <li>
               <Link to="/">Cerrar Sesion</Link>
@@ -32,6 +30,7 @@ function App() {
           <Route path="/breakfast" component={Breakfast} />
           <Route path="/lunch" component={Lunch} />
           <Route exact path="/" component={Button} />
+          <Route path="/kitchen" component={Kitchen} />
         </div>
       </nav>
     </Router>

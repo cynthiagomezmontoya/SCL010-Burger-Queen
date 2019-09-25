@@ -1,14 +1,14 @@
 import React from "react";
 import "../App.css";
 
-class Breakfast extends React.Component {
+class Kitchen extends React.Component {
   render() {
     return (
       <div>
-        <h2> Desayuno </h2>
+        <h2>Cocina </h2>
       </div>
     );
   }
 }
 
-export default Breakfast;
+export default Kitchen;
