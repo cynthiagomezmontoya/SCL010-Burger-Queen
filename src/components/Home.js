@@ -1,12 +1,11 @@
 import React from "react";
 import "../App.css";
+//import logo from
 
-function Home() {
-  return (
-    <div>
-      <h2>Home</h2>
-    </div>
-  );
+class Home extends React.Component {
+  render() {
+    return <div className="home"></div>;
+  }
 }
 
 export default Home;
