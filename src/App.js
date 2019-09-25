@@ -12,15 +12,15 @@ import Kitchen from "./components/Kitchen";
 function App() {
   return (
     <Router>
-      <nav>
-          <ul className="menu">
+      <nav className="menu">
+        <Link to="/">
+        <button>Inicio</button>
+        </Link>
+        <Link to="/kitchen">
         <button>
-        <Link to="/">Inicio</Link>
+          Cocina
         </button>
-        <button>
-        <Link to="/kitchen"> Cocina</Link>
-        </button>
-          </ul>
+        </Link>
       </nav>
           <Route exact path="/" component={Home} />
           <Route path="/breakfast" component={Breakfast} />
