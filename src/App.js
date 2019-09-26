@@ -12,14 +12,14 @@ function App() {
   return (
     <Router>
       <div className="options">
-        <nav class="navbar navbar-dark bg-warning">
+        <nav className="navbar navbar-dark bg-warning">
           <Link to="/">
-            <button type="button" class="btn btn-warning btn-lg">
+            <button type="button" className="btn btn-warning btn-lg">
               Inicio
             </button>
           </Link>
           <Link to="/kitchen">
-            <button type="button" class="btn btn-warning btn-lg">
+            <button type="button" className="btn btn-warning btn-lg">
               Cocina
             </button>
           </Link>
