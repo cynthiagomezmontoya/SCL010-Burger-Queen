@@ -1,5 +1,4 @@
 import React from 'react';
-import Breakfast from './Breakfast'
 
 /*
 TODO:
@@ -9,12 +8,12 @@ I. Crear calculadora estática
     3. Mostrar total ✓✓
     4. Crear función que genere tabla según cantidad de ítems en un array de mentira ✓✓
     5. Sumar cantidad de productos si se repiten <-- lo arreglamos al cerrar la historia 1
-    6. Traspasar props desde Breakfast y Lunch
+    6. Traspasar props desde Breakfast y Lunch ✓✓
     7. Diseñar sistema de estados
     8. Agregar botones en Breakfast y Lunch para agregar productos a pasar en 
     calculadora de cuenta
-    9. Crear tabla dinámicamente con data real
-    10. Calcular cuenta con data real de Breakfast y Lunch
+    9. Crear tabla dinámicamente con data real ✓✓
+    10. Calcular cuenta con data real de Breakfast y Lunch ✓✓
     11. Agregar botón de eliminar
 */
 
@@ -30,42 +29,8 @@ const TableHeader = () => {
     )
 }
 
-let fakeBreakfast = [{
-    "id": "1",
-    "type": "drink",
-    "product": "Café americano",
-    "price": 500,
-    "size": "1x",
-    "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
-  },
-  {
-    "id": "1",
-    "type": "drink",
-    "product": "Café americano",
-    "price": 500,
-    "size": "1x",
-    "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
-  },
-  {
-    "id": "3",
-    "type": "drink",
-    "product": "Jugo natural",
-    "price": 700,
-    "size": "1x",
-    "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
-  },  
-  {
-    "id": "3",
-    "type": "drink",
-    "product": "Jugo natural",
-    "price": 700,
-    "size": "1x",
-    "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
-  }
-];
-
 const TableBody = props => {
-    const rows = fakeBreakfast.map((row,id)=> {
+    const rows = props.order.map((row,id)=> {
         return (
             <tr key={id}>
                 <td>{"1"}</td>
@@ -79,15 +44,34 @@ const TableBody = props => {
         <tbody>{rows}</tbody>
     )
 }
+const ShowTotal = props => {
+    let total = props.order.reduce((sum, order) => {
+        return sum + order.price
+        },0)
+        return (
+        <tbody>
+            <tr>
+                <td>{}</td>
+                <td>TOTAL:</td>
+                <td>{total}</td>
+            </tr>
+        </tbody>)
+};
 
 class CheckCalculator extends React.Component
 {
+
     render () {
+        const { order } = this.props;
+
         return (
             <div>
                 <h2>LA CUENTA</h2>
-                <TableHeader />
-                <TableBody />
+                <table>
+                    <TableHeader />
+                    <TableBody order={order}/>
+                    <ShowTotal order={order} />
+                </table>
             </div>
         )
     }

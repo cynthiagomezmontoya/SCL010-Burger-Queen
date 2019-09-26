@@ -7,7 +7,6 @@ import Home from "./components/Home";
 import Breakfast from "./components/Breakfast";
 import Lunch from "./components/Lunch";
 import Kitchen from "./components/Kitchen";
-import CheckCalculator from "./components/CheckCalculator";
 
 function App() {
   return (
