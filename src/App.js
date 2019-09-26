@@ -27,9 +27,7 @@ function App() {
       </div>
       <Route exact path="/" component={Home} />
       <Route path="/breakfast" component={Breakfast} />
-      <Route path="/breakfast" component={CheckCalculator} />
       <Route path="/lunch" component={Lunch} />
-      <Route path="/lunch" component={CheckCalculator} />
       <Route path="/kitchen" component={Kitchen} />
     </Router>
   );
