@@ -5,7 +5,7 @@ class Kitchen extends React.Component {
   render() {
     return (
       <div>
-        <h2>Cocina </h2>
+        <h2> Órdenes de los clientes </h2>
       </div>
     );
   }
