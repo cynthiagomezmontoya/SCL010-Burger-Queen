@@ -1,68 +1,75 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Burger Queen
 
-## Available Scripts
+<img src="https://i.ibb.co/ZScTTTt/BQLOGO.png" alt="BQLOGO" border="0">
 
-In the project directory, you can run:
+## Introducción
 
-### `npm start`
+Partiendo de los requerimientos de negocio dde Burger Queen, construimos una interfaz para tablet, que permite a los meseros realizar los pedidos de los clientes , enviandolo directamente a la cocina; siendo visualizados para su elaboración e indicar cuando esten terminados, y por último, permitir a los meseros visualizar los pedidos terminados para poder entregar a los clientes, indicando este cambio en el sistema.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Objetivo
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- Construir construir una*interfaz web* usando React.
 
-### `npm test`
+## Planificación
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+La planificación fue realizada en milestones y issues en project Burger Queen almacenado en github.
 
-### `npm run build`
+# Criterios de aceptación del proyecto
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Definición del producto
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+El product owner del proyecto ha conversado con el cliente y luego de una
+reunión con el project manager han logrado crear el siguiente backlog:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### [H1] Mesero/a debe poder tomar orden de una persona
 
-### `npm run eject`
+Yo como mesero o mesera debería poder tomar la orden de un cliente para saber fácilmente cuanto cobrar y que la cocina tenga las órdenes de manera inmediata y según cuando van llegando.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Definición de terminado:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    Anotar nombre de cliente.
+    Agregar productos al pedido.
+    Eliminar productos.
+    Ver resumen y el total de la compra.
+    Enviar pedido a cocina (guardar en alguna base de datos).
+    Se ve y funciona bien en una tablet.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### [H2] Jefe de cocina debe poder ver ordenes
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Yo como cocinero o cocinera debería poder ver las órdenes de los clientes y marcar cuales están listas para saber qué se debe cocinar y avisar al mesero que una orden está lista.
 
-## Learn More
+Definición de terminado
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Ver los pedidos ordenados según van llegando.
+    Marcar los pedidos que se han terminado.
+    Ver el tiempo que tomó el pedido.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### [Historia de usuario] Mesero/a debe poder ver órdenes listas para servir para entregarlas a los clientes
 
-### Code Splitting
+Yo como mesero o mesera debería poder ver las órdenes que han sido cocinadas y están listas para servir a los clientes, para así entregarlas y que el cliente se vaya feliz con su comida.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Definición de terminado
 
-### Analyzing the Bundle Size
+    Ver listado de órdenes terminadas.
+    Marcar pedidos que han sido entregados.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Diagrama de Flujo
 
-### Making a Progressive Web App
+A partir de las historias de usuario se define el flujo básico de la aplicación:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+<img src="https://i.ibb.co/GMSYqRD/flujo.png">
 
-### Advanced Configuration
+## Prototipo
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Herramientas Tecnicas Utilizadas
 
-### Deployment
+- Ejecución del interfaz de usuario HTML, CSS, JS
+- Firebase
+- React
+- Boostrap
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## Programadoras
 
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- [Alejandra Morales](https://github.com/AlejandraMoralesB)
+- [Cynthia Gómez](https://github.com/cynthiagomezmontoya)
+- [Estefanía Romero-Cors ](https://github.com/Zotapianola)
