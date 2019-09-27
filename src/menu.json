@@ -6,7 +6,7 @@
       "product": "Café americano",
       "price": 500,
       "size": "1x",
-      "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
+      "img": "☕" 
     },
     {
       "id": "2",
@@ -14,7 +14,7 @@
       "product": "Café con leche",
       "price": 700,
       "size": "1x",
-      "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
+      "img": "☕" 
     },
     {
       "id": "3",
@@ -22,7 +22,7 @@
       "product": "Jugo natural",
       "price": 700,
       "size": "1x",
-      "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
+      "img": "🍹"
     },
     {
       "id": "4",
@@ -30,7 +30,7 @@
       "product": "Sandwich de jamón y queso",
       "price": 1000,
       "size": "1x",
-      "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
+      "img": "🍹"
     }
   ],
   "Lunch": [
@@ -40,7 +40,7 @@
       "product": "Hamburguesa de pollo",
       "price": 1500,
       "size": "1x",
-      "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
+      "img": "🍔"
     },
     {
       "id": "6",
@@ -48,7 +48,7 @@
       "product": "Hamburguesa de vacuno simple",
       "price": 1500,
       "size": "1x",
-      "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
+      "img": "🍔"
     },
     {
       "id": "7",
@@ -56,7 +56,7 @@
       "product": "Hamburguesa vegetariana simple",
       "price": 1500,
       "size": "1x",
-      "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
+      "img": "🍔"
     },
     {
       "id": "8",
@@ -64,7 +64,7 @@
       "product": "Hamburguesa pollo doble",
       "price": 2500,
       "size": "2x",
-      "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
+      "img": "🍔"
     },
     {
       "id": "9",
@@ -72,7 +72,7 @@
       "product": "Hamburguesa vacuno doble",
       "price": 2500,
       "size": "2x",
-      "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
+      "img": "🍔"
     },
     {
       "id": "10",
@@ -80,7 +80,7 @@
       "product": "Hamburguesa vegetariana doble",
       "price": 2500,
       "size": "2x",
-      "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
+      "img": "🍔"
     },
     {
       "id": "11",
@@ -88,7 +88,7 @@
       "product": "Huevo",
       "price": 500,
       "size": "1x",
-      "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
+      "img": "🍟"
     },
     {
       "id": "12",
@@ -96,7 +96,7 @@
       "product": "Queso",
       "price": 500,
       "size": "1x",
-      "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
+      "img": "🍟"
     },
     {
       "id": "13",
@@ -104,7 +104,7 @@
       "product": "Papas fritas",
       "price": 500,
       "size": "1x",
-      "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
+      "img": "🍟"
     },
     {
       "id": "14",
@@ -112,7 +112,7 @@
       "product": "Onion rings",
       "price": 500,
       "size": "1x",
-      "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
+      "img": "🍟"
     },
     {
       "id": "15",
@@ -120,7 +120,7 @@
       "product": "Agua 500ml",
       "price": 500,
       "size": "500",
-      "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
+      "img": "🍹"
     },
     {
       "id": "16",
@@ -128,21 +128,21 @@
       "product": "Agua 750ml",
       "price": 800,
       "size": "750",
-      "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
+      "img": "🍹"
     },
     {
       "id": "17",
       "type": "drink",
       "product": "Bebida 500ml",
       "price": 700,
-      "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
+      "img": "🍹"
     },
     {
       "id": "18",
       "type": "drink",
       "product": "Bebida 750ml",
       "price": 1000,
-      "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
+      "img": "🍹"
     }
   ]
 }

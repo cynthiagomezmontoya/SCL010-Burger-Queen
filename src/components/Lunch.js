@@ -2,6 +2,8 @@ import React from "react";
 import "../App.css";
 import wholeMenu from "../menu.json"
 import CheckCalculator from "./CheckCalculator";
+import Button from "../button/Button"
+
 
 const lunch = wholeMenu.Lunch;
 
@@ -35,21 +37,22 @@ class Lunch extends React.Component {
 
   render() {
     return (
-      <div>
-        <h2> Menú del día </h2>
-        <section>
-          {lunch.map(item => (
-            <ul key={item.id}>
-              <li>{item.product}</li>
-              <li>{item.price}</li>
-              <li><img src={item.img} alt="item" width="30"/></li>
-            </ul>
-          ))}
-        </section>
+      <div className="container">
+				<div className="row">
+        
+						{lunch.map((item =>
+						<div className="card">
+        
+						<Button img={item.img} item={item.product} price={item.price} key={item.id} addToList={this.props.addToList}/>
+						</div>
+            ))
+            }
+				</div>
         <CheckCalculator order={fakeLunch} />
-      </div>
-    );
-  }
+			</div>    
+  )
+	}
 }
+
 
 export default Lunch;

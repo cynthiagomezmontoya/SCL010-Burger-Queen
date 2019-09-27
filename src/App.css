@@ -47,8 +47,16 @@ nav {
 }
 
 .button {
+  width: 200px;
+  height: 150px;
+  color: black;
+  background-color: rgb(226, 184, 45);
+  border-color: rgb(226, 184, 45);
+  margin: 35px;
+}
+.card {
   width: 250px;
-  height: 55px;
+  height: 150px;
   color: black;
   background-color: rgb(226, 184, 45);
   border-color: rgb(226, 184, 45);
