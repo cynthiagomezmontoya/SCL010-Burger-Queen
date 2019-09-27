@@ -2,6 +2,8 @@ import React from "react";
 import "../App.css";
 import wholeMenu from "../menu.json"
 import CheckCalculator from "./CheckCalculator"
+import Button from "../button/Button"
+
 
 const breakfast = wholeMenu.Breakfast;
 
@@ -11,7 +13,7 @@ let fakeBreakfast = [{
   "product": "Café gringo",
   "price": 500,
   "size": "1x",
-  "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
+  "img": "🍹"
 },
 {
   "id": "1",
@@ -19,7 +21,7 @@ let fakeBreakfast = [{
   "product": "Café gringo",
   "price": 500,
   "size": "1x",
-  "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
+  "img": "🍹"
 },
 {
   "id": "3",
@@ -27,30 +29,37 @@ let fakeBreakfast = [{
   "product": "Jugo natural",
   "price": 700,
   "size": "1x",
-  "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
+  "img":  "🍹"
 }
 ];
 
 class Breakfast extends React.Component {
   render() {
     return (
-      <div>
-        <h2> Desayuno </h2>
-        <section>
-          {breakfast.map(item => (
-            <ul key={item.id}>
-              <li>{item.product}</li>
-              <li>{item.price}</li>
-              <li>
-                <img src={item.img} alt="item" width="30" />
-              </li>
-            </ul>
-          ))}
-        </section>
-        <CheckCalculator order={fakeBreakfast} />
-      </div>
-    );
-  }
+      
+      <div className="container">
+				<div className="row">
+        
+						{breakfast.map((item =>
+						<div className="card">
+						<Button img={item.img} item={item.product} price={item.price} key={item.id} addToList={this.props.addToList}/>
+						</div>
+            ))
+            }
+				</div>
+      <CheckCalculator order={fakeBreakfast} />
+			</div>
+       
+       
+  )
+	}
 }
 
+
 export default Breakfast;
+          
+          
+         
+        
+      
+    
