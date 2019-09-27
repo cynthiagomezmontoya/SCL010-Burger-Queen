@@ -1,6 +1,6 @@
-# Burger Queen
+# Burger Queen 🍔
 
-<img src="https://i.ibb.co/ZScTTTt/BQLOGO.png" alt="BQLOGO" border="0">
+<img src="https://i.ibb.co/ZScTTTt/BQLOGO.png" alt="BQLOGO" >
 
 ## Introducción
 
@@ -8,11 +8,11 @@ Partiendo de los requerimientos de negocio dde Burger Queen, construimos una int
 
 ## Objetivo
 
-- Construir construir una*interfaz web* usando React.
+- Construir una interfaz web para Burger Queen usando React.
 
 ## Planificación
 
-La planificación fue realizada en milestones y issues en project Burger Queen almacenado en github.
+La planificación fue realizada en milestones y issues en project "Burger Queen" almacenado en github.
 
 # Criterios de aceptación del proyecto
 
@@ -44,7 +44,7 @@ Definición de terminado
     Marcar los pedidos que se han terminado.
     Ver el tiempo que tomó el pedido.
 
-#### [Historia de usuario] Mesero/a debe poder ver órdenes listas para servir para entregarlas a los clientes
+#### [H3] Mesero/a debe poder ver órdenes listas para servir para entregarlas a los clientes
 
 Yo como mesero o mesera debería poder ver las órdenes que han sido cocinadas y están listas para servir a los clientes, para así entregarlas y que el cliente se vaya feliz con su comida.
 
@@ -59,7 +59,15 @@ A partir de las historias de usuario se define el flujo básico de la aplicació
 
 <img src="https://i.ibb.co/GMSYqRD/flujo.png">
 
-## Prototipo
+## Prototipo de Baja Fidelidad y componentes a usar
+
+Los prototipos fueron generados a partir de las vistas que realizamos . En cada una de esta vista se realizó la separación de los componentes que utilizamos.
+
+<img src="https://i.ibb.co/NFCdfwG/HOME-COMPONENTS.jpg" alt="HOME-COMPONENTS" border="0">
+<img src="https://i.ibb.co/mBfbS8K/MEALS-COMPONENTS.jpg" alt="MEALS-COMPONENTS" border="0">
+<img src="https://i.ibb.co/Bj1tRXY/BREAKFAST-COMPONENTS.jpg" alt="BREAKFAST-COMPONENTS" border="0">
+
+** Se realizaron modificaciones en algunos componentes, como el nombre, ubicación para una mejor optimización y eficiencia de la App. **
 
 ## Herramientas Tecnicas Utilizadas
 
