@@ -1,57 +1,76 @@
-import React from "react";
+import React, { Component } from 'react';
 import "../App.css";
-import wholeMenu from "../menu.json"
+import wholeMenu from "../menu.json";
 import CheckCalculator from "./CheckCalculator";
-import Button from "../button/Button"
-
+import "./button.css";
 
 const lunch = wholeMenu.Lunch;
 
-let fakeLunch = [{
-  "id": "5",
-  "type": "food",
-  "product": "Hamburguesa de metalero",
-  "price": 1500,
-  "size": "1x",
-  "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
-},
-{
-  "id": "6",
-  "type": "food",
-  "product": "Hamburguesa de perdices",
-  "price": 1500,
-  "size": "1x",
-  "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
-},
-{
-  "id": "7",
-  "type": "food",
-  "product": "Hamburguesa vegetariana simple",
-  "price": 1500,
-  "size": "1x",
-  "img": "https://image.flaticon.com/icons/svg/198/198618.svg"
-}
-];
-
-class Lunch extends React.Component {
+class Lunch extends Component {
+  constructor () {
+    super();
+    this.state = {
+      order: []
+    }
+    this.handleClick = this.handleClick.bind(this)
+  }
+  
+  handleClick (e) {
+    // busca elemento cliqueado y lo agrega a un array
+    let orderedItem = (lunch.filter(item => item.id === e.target.id));
+    let oI = orderedItem[0];
+    if (oI != null || undefined)
+    {
+      // crea nuevo objeto pasado a synth pop y new wave
+      let newOrder = {
+      "id": oI.id,
+      "type": oI.type,
+      "product": oI.product,
+      "price": oI.price,
+      "size": oI.size,
+      "img": oI.img
+      }
+      // cambia estado de orden y reproduce 'Blue Monday' en tu cabeza
+      this.setState({
+      order: [...this.state.order, newOrder]
+      }) 
+    }
+    else
+    {
+      // problema debido a asincronía de eventos, solucionar en sgte. iteración
+      console.log("Clic defectuoso, pruebe de nuevo");
+    }
+  }
 
   render() {
+    
     return (
-      <div className="container">
-				<div className="row">
-        
-						{lunch.map((item =>
-						<div className="card">
-        
-						<Button img={item.img} item={item.product} price={item.price} key={item.id} addToList={this.props.addToList}/>
-						</div>
-            ))
-            }
-				</div>
-        <CheckCalculator order={fakeLunch} />
-			</div>    
-  )
-	}
+      <div>
+        <h2> Menú del día </h2>
+        <section>
+          {lunch.map(item => (
+            <button 
+            className="btn item-btn" 
+            key={item.id} 
+            onClick={this.handleClick}>
+              <div id={item.id}>
+                <p className="item-img">                
+                  <span role="img" >{item.img}</span>
+                </p>
+                <p className="item-name">
+                  {item.product}
+                </p>
+                <p className="item-price">
+                  {item.price}
+                </p> 
+              </div>
+            </button>
+          ))}
+        </section>
+        <CheckCalculator order={this.state.order} />
+      </div>
+    );
+  }
 }
 
 
