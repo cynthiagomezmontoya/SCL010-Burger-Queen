@@ -1,20 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
+import uuid from 'react-uuid'
 
 /*
-TODO:
-I. Crear calculadora estática
-    1. Crear tabla (hardcorde) con CANTIDAD, ÍTEM y VALOR (c/u) con VALOR TOTAL al final ✓✓
-    2. Agregar algunos productos con sus precios ✓✓
-    3. Mostrar total ✓✓
-    4. Crear función que genere tabla según cantidad de ítems en un array de mentira ✓✓
-    5. Sumar cantidad de productos si se repiten <-- lo arreglamos al cerrar la historia 1
-    6. Traspasar props desde Breakfast y Lunch ✓✓
-    7. Diseñar sistema de estados
-    8. Agregar botones en Breakfast y Lunch para agregar productos a pasar en 
-    calculadora de cuenta
-    9. Crear tabla dinámicamente con data real ✓✓
-    10. Calcular cuenta con data real de Breakfast y Lunch ✓✓
-    11. Agregar botón de eliminar
+1. Nombrar objeto tr por id única
+2. En el click, identifica tr con su uuid
+3. Borra objeto de la tabla
+4. setState a nueva "cuenta"
 */
 
 const TableHeader = () => {
@@ -29,13 +20,21 @@ const TableHeader = () => {
     )
 }
 
+const DeleteItem = () => {
+        return (
+            <td><button>X</button></td>
+        )
+}
+
 const TableBody = props => {
     const rows = props.order.map((row,id)=> {
         return (
-            <tr key={id}>
+            // entrega key e identifica objeto tr con id única
+            <tr id={`tr${uuid()}`}key={id}>
                 <td>{"1"}</td>
                 <td>{row.product}</td>
                 <td>{row.price}</td>
+                <DeleteItem />
             </tr>
         )
     })
@@ -44,6 +43,7 @@ const TableBody = props => {
         <tbody>{rows}</tbody>
     )
 }
+
 const ShowTotal = props => {
     let total = props.order.reduce((sum, order) => {
         return sum + order.price
@@ -58,21 +58,20 @@ const ShowTotal = props => {
         </tbody>)
 };
 
-class CheckCalculator extends React.Component
+class CheckCalculator extends Component
 {
-
     render () {
         const { order } = this.props;
 
         return (
-            <div>
+            <section>
                 <h2>LA CUENTA</h2>
                 <table>
                     <TableHeader />
                     <TableBody order={order}/>
                     <ShowTotal order={order} />
                 </table>
-            </div>
+            </section>
         )
     }
 }
