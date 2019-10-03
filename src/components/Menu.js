@@ -4,38 +4,35 @@ import "./button.css";
 import "../App.css";
 
 class Menu extends Component {
-  constructor() {
+  constructor () {
     super();
     this.state = {
       order: []
-    };
-    this.handleClick = this.handleClick.bind(this);
+    }
   }
 
-  handleClick(e) {
+  handleClick = (e)=> {
     // busca elemento cliqueado y lo agrega a un array
-    let orderedItem = this.props.menu.filter(
-      item => item.id === e.currentTarget.id
-    );
+    let orderedItem = (this.props.menu.filter(item => item.id === e.currentTarget.id));
     let oI = orderedItem[0];
     // crea nuevo objeto pasado a synth pop y new wave
     let newOrder = {
-      id: oI.id,
-      type: oI.type,
-      product: oI.product,
-      price: oI.price,
-      size: oI.size,
-      img: oI.img
-    };
+    "id": oI.id,
+    "type": oI.type,
+    "product": oI.product,
+    "price": oI.price,
+    "size": oI.size,
+    "img": oI.img
+    }
     // cambia estado de orden y reproduce 'Blue Monday' en tu cabeza
     this.setState({
-      order: [...this.state.order, newOrder]
-    });
+    order: [...this.state.order, newOrder]
+    }) 
   }
 
   render() {
     return (
-      <div class="modal-body row">
+      <div className="modal-body row">
         <div className="col-md-6 ">
           <h2> Tomar Orden </h2>
           <section>
@@ -75,14 +72,15 @@ class Menu extends Component {
                 placeholder="Nombre Apelllido"
                 value={this.state.value}
                 onChange={this.handleChange}
-                class="form-control-s"
+                className="form-control-s"
               />
             </label>
             <input
               id="color"
-              class="form-control"
+              className="form-control"
               type="submit"
               value="Enviar a Cocina"
+              onClick={()=>{alert("PEDIDO ENVIADO")}}
             />
           </form>
           <CheckCalculator order={this.state.order} />
