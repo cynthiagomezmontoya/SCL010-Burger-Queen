@@ -17,7 +17,7 @@ class Kitchen extends React.Component {
           <div className="orders-display"></div>
         </div>
         <div>
-          <img
+          <img id="site-under-construction"
             src="https://i.ibb.co/cF8qtKR/construccion-1024x640.png"
             alt="construccion-1024x640"
             border="0"

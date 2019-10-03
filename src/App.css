@@ -152,3 +152,7 @@ kitchen-service-container {
   color: rgb(247, 244, 244);
   background: rgb(185, 185, 185);
 }
+
+#site-under-construction {
+  width: 60%;
+}
