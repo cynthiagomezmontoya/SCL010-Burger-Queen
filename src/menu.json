@@ -1,0 +1,148 @@
+{
+  "Breakfast": [
+    {
+      "id": "1",
+      "type": "drink",
+      "product": "Café americano",
+      "price": 500,
+      "size": "1x",
+      "img": "☕"
+    },
+    {
+      "id": "2",
+      "type": "drink",
+      "product": "Café con leche",
+      "price": 700,
+      "size": "1x",
+      "img": "☕"
+    },
+    {
+      "id": "3",
+      "type": "drink",
+      "product": "Jugo natural",
+      "price": 700,
+      "size": "1x",
+      "img": "🍹"
+    },
+    {
+      "id": "4",
+      "type": "food",
+      "product": "Sandwich de jamón y queso",
+      "price": 1000,
+      "size": "1x",
+      "img": "🥪"
+    }
+  ],
+  "Lunch": [
+    {
+      "id": "5",
+      "type": "food",
+      "product": "Hamburguesa de pollo",
+      "price": 1500,
+      "size": "1x",
+      "img": "🍔"
+    },
+    {
+      "id": "6",
+      "type": "food",
+      "product": "Hamburguesa de vacuno simple",
+      "price": 1500,
+      "size": "1x",
+      "img": "🍔"
+    },
+    {
+      "id": "7",
+      "type": "food",
+      "product": "Hamburguesa vegetariana simple",
+      "price": 1500,
+      "size": "1x",
+      "img": "🍔"
+    },
+    {
+      "id": "8",
+      "type": "food",
+      "product": "Hamburguesa pollo doble",
+      "price": 2500,
+      "size": "2x",
+      "img": "🍔"
+    },
+    {
+      "id": "9",
+      "type": "food",
+      "product": "Hamburguesa vacuno doble",
+      "price": 2500,
+      "size": "2x",
+      "img": "🍔"
+    },
+    {
+      "id": "10",
+      "type": "food",
+      "product": "Hamburguesa vegetariana doble",
+      "price": 2500,
+      "size": "2x",
+      "img": "🍔"
+    },
+    {
+      "id": "11",
+      "type": "ingredient",
+      "product": "Huevo",
+      "price": 500,
+      "size": "1x",
+      "img": "🍳"
+    },
+    {
+      "id": "12",
+      "type": "ingredient",
+      "product": "Queso",
+      "price": 500,
+      "size": "1x",
+      "img": "🧀"
+    },
+    {
+      "id": "13",
+      "type": "side",
+      "product": "Papas fritas",
+      "price": 500,
+      "size": "1x",
+      "img": "🍟"
+    },
+    {
+      "id": "14",
+      "type": "side",
+      "product": "Onion rings",
+      "price": 500,
+      "size": "1x",
+      "img": "🥯"
+    },
+    {
+      "id": "15",
+      "type": "drink",
+      "product": "Agua 500ml",
+      "price": 500,
+      "size": "500",
+      "img": "🧴"
+    },
+    {
+      "id": "16",
+      "type": "drink",
+      "product": "Agua 750ml",
+      "price": 800,
+      "size": "750",
+      "img": "🧴"
+    },
+    {
+      "id": "17",
+      "type": "drink",
+      "product": "Bebida 500ml",
+      "price": 700,
+      "img": "🥤"
+    },
+    {
+      "id": "18",
+      "type": "drink",
+      "product": "Bebida 750ml",
+      "price": 1000,
+      "img": "🥤"
+    }
+  ]
+}
