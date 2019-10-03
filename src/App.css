@@ -7,22 +7,6 @@
   background-size: cover;
 }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  /*background-image: url("https://i.ibb.co/gyhSsCt/queen.jpg"); */
-  box-sizing: content-box;
-  width: 100%;
-  height: 768px;
-  background-attachment: scroll;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #343434;
-  opacity: 60px;
-}
-
 nav {
   justify-content: space-between;
   color: #080808;
@@ -33,7 +17,7 @@ nav {
   background-image: url("https://i.ibb.co/rdSmWgD/900x600bq.jpg");
   box-sizing: content-box;
   width: 100%;
-  height: 768px;
+  height: 1024px;
   background-attachment: scroll;
   background-position: center center;
   background-repeat: no-repeat;
@@ -61,4 +45,110 @@ nav {
   background-color: rgb(226, 184, 45);
   border-color: rgb(226, 184, 45);
   margin: 35px;
+}
+
+.form-control-S {
+  width: 60px;
+  margin: 10px;
+}
+
+#color {
+  background-color: rgb(253, 32, 32);
+  color: blanchedalmond;
+  size: 40%;
+  margin: 25px;
+}
+/* KITCHEN  */
+
+kitchen-service-container {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem;
+  background-color: rgb(171, 169, 169);
+  grid-template-columns: 1fr;
+  grid-template-rows: 3rem auto;
+  grid-template-areas:
+    "kitchen-display"
+    "orders-display";
+}
+
+.orders-display {
+  grid-area: orders-display;
+  display: block;
+}
+
+.kitchen-display {
+  grid-area: kitchen-display;
+  display: grid;
+  border-radius: 0.25rem;
+  grid-template-columns: 1fr 4fr 4fr 2fr 4fr 2fr;
+  grid-column-gap: 0.5rem;
+  grid-template-rows: auto;
+  grid-template-areas: "home-btn display-hour display-waiter display-table display-preparing display-deliver";
+  margin-right: 9%;
+}
+
+.display-Name {
+  grid-area: display-waiter;
+  display: flex;
+  border-radius: 0.25rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  color: rgb(247, 244, 244);
+  background: rgb(185, 185, 185);
+}
+
+.display-hour {
+  grid-area: display-hour;
+  display: flex;
+  border-radius: 0.25rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  color: rgb(247, 244, 244);
+  background: rgb(185, 185, 185);
+}
+
+.display-table {
+  grid-area: display-table;
+  display: flex;
+  border-radius: 0.25rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  color: rgb(247, 244, 244);
+  background: rgb(185, 185, 185);
+}
+
+.display-order {
+  grid-area: display-order;
+  display: flex;
+  border-radius: 0.25rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  color: rgb(247, 244, 244);
+  background: rgb(185, 185, 185);
+}
+
+.display-preparing {
+  grid-area: display-preparing;
+  display: flex;
+  border-radius: 0.25rem;
+  align-items: center;
+  justify-content: center;
+  color: rgb(247, 244, 244);
+  background: rgb(185, 185, 185);
+}
+
+.display-deliver {
+  grid-area: display-deliver;
+  display: flex;
+  border-radius: 0.25rem;
+  align-items: center;
+  justify-content: center;
+  color: rgb(247, 244, 244);
+  background: rgb(185, 185, 185);
 }

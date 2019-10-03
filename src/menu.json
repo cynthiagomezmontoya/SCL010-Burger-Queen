@@ -6,7 +6,7 @@
       "product": "Café americano",
       "price": 500,
       "size": "1x",
-      "img": "☕" 
+      "img": "☕"
     },
     {
       "id": "2",
@@ -14,7 +14,7 @@
       "product": "Café con leche",
       "price": 700,
       "size": "1x",
-      "img": "☕" 
+      "img": "☕"
     },
     {
       "id": "3",
@@ -30,7 +30,7 @@
       "product": "Sandwich de jamón y queso",
       "price": 1000,
       "size": "1x",
-      "img": "🍹"
+      "img": "🥪"
     }
   ],
   "Lunch": [
@@ -88,7 +88,7 @@
       "product": "Huevo",
       "price": 500,
       "size": "1x",
-      "img": "🍟"
+      "img": "🍳"
     },
     {
       "id": "12",
@@ -96,7 +96,7 @@
       "product": "Queso",
       "price": 500,
       "size": "1x",
-      "img": "🍟"
+      "img": "🧀"
     },
     {
       "id": "13",
@@ -112,7 +112,7 @@
       "product": "Onion rings",
       "price": 500,
       "size": "1x",
-      "img": "🍟"
+      "img": "🥯"
     },
     {
       "id": "15",
@@ -120,7 +120,7 @@
       "product": "Agua 500ml",
       "price": 500,
       "size": "500",
-      "img": "🍹"
+      "img": "🧴"
     },
     {
       "id": "16",
@@ -128,21 +128,21 @@
       "product": "Agua 750ml",
       "price": 800,
       "size": "750",
-      "img": "🍹"
+      "img": "🧴"
     },
     {
       "id": "17",
       "type": "drink",
       "product": "Bebida 500ml",
       "price": 700,
-      "img": "🍹"
+      "img": "🥤"
     },
     {
       "id": "18",
       "type": "drink",
       "product": "Bebida 750ml",
       "price": 1000,
-      "img": "🍹"
+      "img": "🥤"
     }
   ]
 }
