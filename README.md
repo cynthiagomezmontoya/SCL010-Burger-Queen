@@ -14,13 +14,16 @@ Partiendo de los requerimientos de negocio dde Burger Queen, construimos una int
 
 La planificación fue realizada en milestones y issues en project "Burger Queen" almacenado en github.
 
-# Criterios de aceptación del proyecto
+
 
 ### Definición del producto
 
 El product owner del proyecto ha conversado con el cliente y luego de una
 reunión con el project manager han logrado crear el siguiente backlog:
 
+<img src="https://i.ibb.co/dGX7gbL/inicio.png" alt="inicio" >
+
+<img src="https://i.ibb.co/SnfQKYw/pantalla-2.png" alt="pantalla-2">
 #### [H1] Mesero/a debe poder tomar orden de una persona
 
 Yo como mesero o mesera debería poder tomar la orden de un cliente para saber fácilmente cuanto cobrar y que la cocina tenga las órdenes de manera inmediata y según cuando van llegando.
